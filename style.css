@@ -1,0 +1,79 @@
+body {
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.mybutton {
+  border: none;
+  padding: 7.5px 15px;
+  background-color: coral;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  background: #444;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal .modal-content {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  background-color: white;
+  animation-name: modal;
+  animation-duration: 1s;
+}
+
+.modal .modal-content .header{
+  background-color: coral;
+  padding: 12px
+}.modal .modal-content .header .closebutton{
+  float: right;
+  padding: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.modal .modal-content .header .closebutton:hover{
+  color: white;
+}
+.modal .modal-content .header h3{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.modal .modal-content .modalcontent{
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+}.modal .modal-content footer{
+  background-color: coral;
+  padding: 12px;
+  text-align: center;
+}
+
+
+/*Key frames*/
+@keyframes modal {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes button {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
